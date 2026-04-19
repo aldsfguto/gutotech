@@ -1,0 +1,16 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" rx="32" fill="#050907"/>
+  <rect x="102" y="136" width="250" height="324" rx="24" fill="#0B120D" stroke="#AAB8AD" stroke-opacity="0.22" stroke-width="3"/>
+  <rect x="448" y="136" width="250" height="324" rx="24" fill="#09110C" stroke="#7DFF39" stroke-opacity="0.28" stroke-width="3"/>
+  <path d="M146 204H306" stroke="#B7C2B8" stroke-opacity="0.2" stroke-width="6" stroke-linecap="round"/>
+  <path d="M146 248H282" stroke="#B7C2B8" stroke-opacity="0.14" stroke-width="6" stroke-linecap="round"/>
+  <path d="M494 204H654" stroke="#7DFF39" stroke-opacity="0.34" stroke-width="6" stroke-linecap="round"/>
+  <path d="M494 248H628" stroke="#7DFF39" stroke-opacity="0.2" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="226" cy="352" r="48" stroke="#C3CBC4" stroke-opacity="0.22" stroke-width="10"/>
+  <circle cx="574" cy="352" r="48" stroke="#7DFF39" stroke-opacity="0.78" stroke-width="10"/>
+  <circle cx="574" cy="352" r="20" fill="#7DFF39" fill-opacity="0.22"/>
+  <path d="M374 298L426 298" stroke="#7DFF39" stroke-width="14" stroke-linecap="round"/>
+  <path d="M402 270L430 298L402 326" stroke="#7DFF39" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="104" y="102" fill="#E0E8E1" fill-opacity="0.48" font-family="Orbitron, Segoe UI, sans-serif" font-size="30" font-weight="700">ANTES</text>
+  <text x="446" y="102" fill="#7DFF39" font-family="Orbitron, Segoe UI, sans-serif" font-size="30" font-weight="800">DEPOIS</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" rx="32" fill="#040806"/>
+  <rect x="118" y="112" width="564" height="356" rx="28" fill="#09110C" stroke="#7DFF39" stroke-opacity="0.28" stroke-width="3"/>
+  <rect x="154" y="150" width="492" height="280" rx="18" fill="#0B1510"/>
+  <path d="M208 212H590" stroke="#7DFF39" stroke-opacity="0.22" stroke-width="5" stroke-linecap="round"/>
+  <rect x="208" y="262" width="384" height="26" rx="13" fill="#132219"/>
+  <rect x="208" y="262" width="282" height="26" rx="13" fill="#7DFF39"/>
+  <rect x="208" y="314" width="280" height="12" rx="6" fill="#E7F4E8" fill-opacity="0.18"/>
+  <rect x="208" y="342" width="238" height="12" rx="6" fill="#E7F4E8" fill-opacity="0.12"/>
+  <rect x="208" y="372" width="162" height="12" rx="6" fill="#7DFF39" fill-opacity="0.24"/>
+  <path d="M252 496H548" stroke="#0E1510" stroke-width="18" stroke-linecap="round"/>
+  <text x="122" y="90" fill="#7DFF39" font-family="Orbitron, Segoe UI, sans-serif" font-size="32" font-weight="800">SYSTEM INSTALL</text>
+</svg>

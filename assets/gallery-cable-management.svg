@@ -1,0 +1,13 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" rx="32" fill="#07110B"/>
+  <circle cx="612" cy="118" r="108" fill="#7DFF39" fill-opacity="0.08"/>
+  <rect x="134" y="104" width="532" height="392" rx="26" fill="#09110C" stroke="#7DFF39" stroke-opacity="0.24" stroke-width="3"/>
+  <path d="M178 156H626" stroke="#7DFF39" stroke-opacity="0.18" stroke-width="6" stroke-linecap="round"/>
+  <path d="M222 154C250 198 248 250 234 302C220 352 224 410 278 454" stroke="#7DFF39" stroke-width="8" stroke-linecap="round"/>
+  <path d="M350 154C380 204 380 258 366 312C354 360 360 410 414 454" stroke="#7DFF39" stroke-width="8" stroke-linecap="round" stroke-opacity="0.7"/>
+  <path d="M486 154C514 194 514 244 502 294C490 344 496 402 550 454" stroke="#7DFF39" stroke-width="8" stroke-linecap="round" stroke-opacity="0.48"/>
+  <rect x="292" y="206" width="218" height="126" rx="18" fill="#0C1710" stroke="#7DFF39" stroke-opacity="0.18"/>
+  <rect x="170" y="380" width="114" height="52" rx="16" fill="#0C1710"/>
+  <rect x="516" y="374" width="100" height="60" rx="16" fill="#0C1710"/>
+  <text x="136" y="82" fill="#7DFF39" font-family="Orbitron, Segoe UI, sans-serif" font-size="32" font-weight="800">CABLE MANAGEMENT</text>
+</svg>

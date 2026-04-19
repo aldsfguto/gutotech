@@ -1,0 +1,22 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="60" x2="680" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#112117"/>
+      <stop offset="1" stop-color="#040806"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" rx="32" fill="url(#bg)"/>
+  <circle cx="650" cy="120" r="110" fill="#7DFF39" fill-opacity="0.12"/>
+  <rect x="120" y="120" width="260" height="300" rx="24" fill="#09110C" stroke="#7DFF39" stroke-opacity="0.28" stroke-width="3"/>
+  <rect x="154" y="154" width="192" height="232" rx="18" fill="#061009" stroke="#7DFF39" stroke-opacity="0.16"/>
+  <circle cx="250" cy="226" r="46" stroke="#7DFF39" stroke-width="10" stroke-opacity="0.78"/>
+  <circle cx="250" cy="226" r="24" fill="#7DFF39" fill-opacity="0.22"/>
+  <circle cx="250" cy="326" r="46" stroke="#7DFF39" stroke-width="10" stroke-opacity="0.45"/>
+  <circle cx="250" cy="326" r="24" fill="#7DFF39" fill-opacity="0.18"/>
+  <rect x="448" y="148" width="206" height="132" rx="18" fill="#081009" stroke="#7DFF39" stroke-opacity="0.24" stroke-width="3"/>
+  <rect x="480" y="184" width="142" height="60" rx="10" fill="#0D1710"/>
+  <path d="M506 215H596" stroke="#7DFF39" stroke-opacity="0.32" stroke-width="4" stroke-linecap="round"/>
+  <rect x="492" y="330" width="116" height="84" rx="20" fill="#09110C" stroke="#7DFF39" stroke-opacity="0.18"/>
+  <rect x="120" y="470" width="534" height="18" rx="9" fill="#0A130D"/>
+  <text x="118" y="92" fill="#7DFF39" font-family="Orbitron, Segoe UI, sans-serif" font-size="34" font-weight="800">RGB GREEN BUILD</text>
+</svg>

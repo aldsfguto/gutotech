@@ -1,0 +1,13 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" rx="32" fill="#061009"/>
+  <circle cx="164" cy="126" r="110" fill="#7DFF39" fill-opacity="0.09"/>
+  <rect x="150" y="160" width="348" height="208" rx="24" fill="#09120C" stroke="#7DFF39" stroke-opacity="0.24" stroke-width="3"/>
+  <rect x="180" y="188" width="288" height="152" rx="16" fill="#0D1710"/>
+  <path d="M128 394H520L540 430H110L128 394Z" fill="#0A120D" stroke="#7DFF39" stroke-opacity="0.18"/>
+  <circle cx="630" cy="250" r="70" fill="#0B1510" stroke="#7DFF39" stroke-opacity="0.22" stroke-width="3"/>
+  <path d="M630 208V292M588 250H672" stroke="#7DFF39" stroke-width="10" stroke-linecap="round"/>
+  <path d="M582 392L658 318" stroke="#E7F4E8" stroke-opacity="0.3" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="558" cy="420" r="22" fill="#7DFF39" fill-opacity="0.22"/>
+  <circle cx="624" cy="466" r="26" stroke="#7DFF39" stroke-width="8" stroke-opacity="0.5"/>
+  <text x="150" y="106" fill="#7DFF39" font-family="Orbitron, Segoe UI, sans-serif" font-size="32" font-weight="800">NOTEBOOK SERVICE</text>
+</svg>

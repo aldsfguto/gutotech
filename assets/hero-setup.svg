@@ -1,0 +1,57 @@
+<svg width="900" height="760" viewBox="0 0 900 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="110" y1="78" x2="760" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F1D14"/>
+      <stop offset="1" stop-color="#040806"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="140" y1="140" x2="710" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#183121" stop-opacity="0.96"/>
+      <stop offset="1" stop-color="#09110C" stop-opacity="0.92"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="260" y1="170" x2="700" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DFF39"/>
+      <stop offset="1" stop-color="#B8FF84"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="760" rx="40" fill="url(#bg)"/>
+  <circle cx="706" cy="134" r="108" fill="#7DFF39" fill-opacity="0.12"/>
+  <circle cx="154" cy="646" r="124" fill="#7DFF39" fill-opacity="0.08"/>
+  <path d="M80 566C224 466 370 460 508 508C603 542 708 624 822 566" stroke="#7DFF39" stroke-opacity="0.16" stroke-width="2"/>
+  <path d="M86 602C242 522 416 520 576 566C652 588 732 622 816 614" stroke="#7DFF39" stroke-opacity="0.1" stroke-width="2"/>
+  <rect x="152" y="120" width="430" height="280" rx="22" fill="url(#glass)" stroke="#7DFF39" stroke-opacity="0.28" stroke-width="2"/>
+  <rect x="178" y="146" width="378" height="228" rx="14" fill="#050A07"/>
+  <rect x="210" y="178" width="314" height="164" rx="12" fill="#0B1510" stroke="#7DFF39" stroke-opacity="0.18"/>
+  <path d="M248 220H486" stroke="#7DFF39" stroke-opacity="0.28" stroke-width="4" stroke-linecap="round"/>
+  <path d="M248 256H418" stroke="#E7F4E8" stroke-opacity="0.2" stroke-width="3" stroke-linecap="round"/>
+  <path d="M248 290H448" stroke="#E7F4E8" stroke-opacity="0.16" stroke-width="3" stroke-linecap="round"/>
+  <path d="M248 322H384" stroke="#7DFF39" stroke-opacity="0.22" stroke-width="3" stroke-linecap="round"/>
+  <path d="M332 400L290 462H444L402 400H332Z" fill="#081009" stroke="#7DFF39" stroke-opacity="0.24"/>
+  <rect x="262" y="462" width="210" height="16" rx="8" fill="#0C1610" stroke="#7DFF39" stroke-opacity="0.2"/>
+  <rect x="616" y="168" width="140" height="328" rx="26" fill="url(#glass)" stroke="#7DFF39" stroke-opacity="0.3" stroke-width="2"/>
+  <rect x="642" y="194" width="88" height="276" rx="18" fill="#081009" stroke="#7DFF39" stroke-opacity="0.16"/>
+  <circle cx="686" cy="258" r="34" stroke="#7DFF39" stroke-width="6" stroke-opacity="0.65" filter="url(#glow)"/>
+  <circle cx="686" cy="258" r="18" fill="#7DFF39" fill-opacity="0.24"/>
+  <circle cx="686" cy="348" r="34" stroke="#7DFF39" stroke-width="6" stroke-opacity="0.4"/>
+  <circle cx="686" cy="348" r="18" fill="#7DFF39" fill-opacity="0.18"/>
+  <rect x="662" y="420" width="48" height="10" rx="5" fill="#7DFF39" fill-opacity="0.46"/>
+  <rect x="196" y="514" width="410" height="112" rx="22" fill="#09110C" stroke="#7DFF39" stroke-opacity="0.24" stroke-width="2"/>
+  <path d="M236 570H566" stroke="#E6F3E7" stroke-opacity="0.16" stroke-width="2"/>
+  <rect x="246" y="540" width="42" height="42" rx="8" fill="#0E1811" stroke="#7DFF39" stroke-opacity="0.26"/>
+  <rect x="298" y="540" width="42" height="42" rx="8" fill="#0E1811" stroke="#7DFF39" stroke-opacity="0.26"/>
+  <rect x="350" y="540" width="42" height="42" rx="8" fill="#0E1811" stroke="#7DFF39" stroke-opacity="0.26"/>
+  <rect x="402" y="540" width="42" height="42" rx="8" fill="#0E1811" stroke="#7DFF39" stroke-opacity="0.26"/>
+  <rect x="454" y="540" width="42" height="42" rx="8" fill="#0E1811" stroke="#7DFF39" stroke-opacity="0.26"/>
+  <rect x="506" y="540" width="42" height="42" rx="8" fill="#0E1811" stroke="#7DFF39" stroke-opacity="0.26"/>
+  <rect x="272" y="662" width="330" height="18" rx="9" fill="#081009"/>
+  <path d="M140 88L172 120M762 564L806 608M702 86L728 112" stroke="url(#neon)" stroke-width="3" stroke-linecap="round" stroke-opacity="0.62"/>
+  <rect x="534" y="108" width="148" height="44" rx="14" fill="#0A120D" stroke="#7DFF39" stroke-opacity="0.26"/>
+  <text x="560" y="137" fill="#EAF7E8" font-family="Rajdhani, Segoe UI, sans-serif" font-size="24" font-weight="700">SETUP PREMIUM</text>
+  <text x="152" y="94" fill="#7DFF39" font-family="Orbitron, Segoe UI, sans-serif" font-size="36" font-weight="800">GUTO TECH</text>
+</svg>
