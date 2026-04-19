@@ -214,7 +214,20 @@
             </p>
           </div>
 
-          <div class="services-grid">
+          <div class="carousel-shell reveal">
+            <div class="carousel-toolbar">
+              <p class="carousel-toolbar__hint">Arraste para o lado ou use as setas</p>
+              <div class="carousel-controls" aria-label="Navegação dos serviços">
+                <button class="carousel-control" type="button" data-carousel-prev="servicos" aria-label="Voltar serviços">
+                  <span aria-hidden="true">←</span>
+                </button>
+                <button class="carousel-control" type="button" data-carousel-next="servicos" aria-label="Avançar serviços">
+                  <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+
+          <div class="services-grid carousel-track carousel-track--services" data-carousel-track="servicos">
             <article class="service-card service-card--featured reveal">
               <div class="service-card__top">
                 <span class="service-card__icon" aria-hidden="true">
@@ -412,6 +425,7 @@
                 >Fazer upgrade do meu PC</a
               >
             </article>
+          </div>
           </div>
         </div>
       </section>
@@ -730,7 +744,20 @@
             </p>
           </div>
 
-          <div class="gallery-grid">
+          <div class="carousel-shell reveal">
+            <div class="carousel-toolbar">
+              <p class="carousel-toolbar__hint">Galeria em destaque com rolagem lateral</p>
+              <div class="carousel-controls" aria-label="Navegação da galeria">
+                <button class="carousel-control" type="button" data-carousel-prev="galeria" aria-label="Voltar galeria">
+                  <span aria-hidden="true">←</span>
+                </button>
+                <button class="carousel-control" type="button" data-carousel-next="galeria" aria-label="Avançar galeria">
+                  <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+
+          <div class="gallery-grid carousel-track carousel-track--gallery" data-carousel-track="galeria">
             <figure class="gallery-card gallery-card--wide reveal">
               <img
                 src="assets/gallery-rgb-pc.svg"
@@ -812,6 +839,7 @@
               <figcaption>Peças de hardware em mesa escura com luz verde</figcaption>
             </figure>
           </div>
+          </div>
         </div>
       </section>
 
@@ -826,7 +854,20 @@
             </p>
           </div>
 
-          <div class="testimonial-grid" id="testimonial-list">
+          <div class="carousel-shell carousel-shell--testimonials reveal">
+            <div class="carousel-toolbar">
+              <p class="carousel-toolbar__hint">Depoimentos e avaliações em cards deslizantes</p>
+              <div class="carousel-controls" aria-label="Navegação dos depoimentos">
+                <button class="carousel-control" type="button" data-carousel-prev="depoimentos" aria-label="Voltar depoimentos">
+                  <span aria-hidden="true">←</span>
+                </button>
+                <button class="carousel-control" type="button" data-carousel-next="depoimentos" aria-label="Avançar depoimentos">
+                  <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+
+          <div class="testimonial-grid carousel-track carousel-track--testimonials" id="testimonial-list" data-carousel-track="depoimentos">
             <article class="testimonial-card testimonial-card--sample reveal">
               <div class="testimonial-card__top">
                 <span class="avatar">CM</span>
@@ -885,6 +926,7 @@
                 mais rápido para estudar e trabalhar.”
               </p>
             </article>
+          </div>
           </div>
 
           <div class="review-panel reveal" id="avaliar">
