@@ -1,0 +1,10 @@
+<svg width="144" height="44" viewBox="0 0 144 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="144" height="44" rx="14" fill="#1C0F08"/>
+  <rect x="1" y="1" width="142" height="42" rx="13" stroke="#F56B2A" stroke-opacity="0.25"/>
+  <rect x="10" y="9" width="28" height="26" rx="8" fill="#F56B2A"/>
+  <path d="M18 17.5C18 14.4624 20.4624 12 23.5 12C26.5376 12 29 14.4624 29 17.5" stroke="#FFF5EF" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M18 18.5H29V30C29 31.1046 28.1046 32 27 32H20C18.8954 32 18 31.1046 18 30V18.5Z" fill="#FFF5EF"/>
+  <path d="M23.6 22.1C25.3633 22.1 26.5 22.92 26.5 24.18C26.5 25.12 25.86 25.76 24.88 26.03L23.6 26.38C22.67 26.63 22.31 26.87 22.31 27.34C22.31 27.89 22.8 28.28 23.62 28.28C24.43 28.28 25.05 27.91 25.65 27.26" stroke="#F56B2A" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M24.05 20.85V29.45" stroke="#F56B2A" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="49" y="28" fill="#FFF5EF" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Shopee</text>
+</svg>

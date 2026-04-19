@@ -1,0 +1,11 @@
+<svg width="144" height="44" viewBox="0 0 144 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="144" height="44" rx="14" fill="#1B0B0A"/>
+  <rect x="1" y="1" width="142" height="42" rx="13" stroke="#FF564F" stroke-opacity="0.22"/>
+  <rect x="11" y="10" width="24" height="24" rx="12" fill="#FF4747"/>
+  <path d="M19 18.2C19 15.9 20.85 14 23.15 14C25.45 14 27.3 15.9 27.3 18.2" stroke="#FFF1F0" stroke-width="2" stroke-linecap="round"/>
+  <path d="M17.5 19.5H28.8V24.6C28.8 27.25 26.65 29.4 24 29.4H22.3C19.65 29.4 17.5 27.25 17.5 24.6V19.5Z" fill="#FFF1F0"/>
+  <circle cx="21.2" cy="22.5" r="1.1" fill="#FF4747"/>
+  <circle cx="25.1" cy="22.5" r="1.1" fill="#FF4747"/>
+  <path d="M21.2 25.5C22.1 26.25 24.2 26.25 25.1 25.5" stroke="#FF4747" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="43" y="28" fill="#FFF1F0" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">AliExpress</text>
+</svg>

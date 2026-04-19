@@ -1,0 +1,7 @@
+<svg width="144" height="44" viewBox="0 0 144 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="144" height="44" rx="14" fill="#0C1015"/>
+  <rect x="1" y="1" width="142" height="42" rx="13" stroke="#FFB84D" stroke-opacity="0.2"/>
+  <text x="14" y="27" fill="#F5F7FA" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">amazon</text>
+  <path d="M32 31C46.5 36.5 67.8 36.1 82.5 28.2" stroke="#FF9900" stroke-width="3.1" stroke-linecap="round"/>
+  <path d="M77 27.2L83.6 28L80.2 33.2" stroke="#FF9900" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg width="144" height="44" viewBox="0 0 144 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="144" height="44" rx="14" fill="#0C1208"/>
+  <rect x="1" y="1" width="142" height="42" rx="13" stroke="#7DFF39" stroke-opacity="0.18"/>
+  <rect x="11" y="12" width="28" height="20" rx="8" fill="#112213" stroke="#7DFF39" stroke-opacity="0.4"/>
+  <path d="M20 22H30M25 17V27" stroke="#7DFF39" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="34" cy="19" r="1.8" fill="#7DFF39"/>
+  <circle cx="30.5" cy="25" r="1.8" fill="#D6FF92"/>
+  <text x="48" y="28" fill="#EEFFE2" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Produtos Gamer</text>
+</svg>
