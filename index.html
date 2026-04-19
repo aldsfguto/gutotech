@@ -24,6 +24,7 @@
       content="Seu computador lento, travando ou precisando de cuidados? Na GUTO TECH ele volta rápido, limpo e pronto para uso."
     />
     <meta property="og:locale" content="pt_BR" />
+    <link rel="icon" href="assets/guto-tech-logo.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -71,8 +72,16 @@
     <header class="site-header" id="topo">
       <div class="container site-header__inner">
         <a class="brand" href="#inicio" aria-label="Ir para o inicio da GUTO TECH">
-          <span class="brand__mark" aria-hidden="true"></span>
-          <span>
+          <span class="brand__media">
+            <img
+              class="brand__logo"
+              src="assets/guto-tech-logo.png"
+              alt="Logo GUTO TECH"
+              width="72"
+              height="72"
+            />
+          </span>
+          <span class="brand__text">
             <strong>GUTO TECH</strong>
             <small>Performance para seu computador</small>
           </span>
@@ -109,6 +118,19 @@
         </nav>
       </div>
     </header>
+
+    <div class="mobile-quick-nav-shell">
+      <div class="container">
+        <nav class="mobile-quick-nav" aria-label="Atalhos rápidos do site">
+          <a class="mobile-quick-nav__link is-active" href="#inicio" data-mobile-nav="inicio">Início</a>
+          <a class="mobile-quick-nav__link" href="#servicos" data-mobile-nav="servicos">Serviços</a>
+          <a class="mobile-quick-nav__link" href="#promocoes" data-mobile-nav="promocoes">Promoções</a>
+          <a class="mobile-quick-nav__link" href="#depoimentos" data-mobile-nav="depoimentos">Depoimentos</a>
+          <a class="mobile-quick-nav__link" href="#avaliar" data-mobile-nav="avaliar">Avaliar</a>
+          <a class="mobile-quick-nav__link" href="#contato" data-mobile-nav="contato">Contato</a>
+        </nav>
+      </div>
+    </div>
 
     <main>
       <section class="hero section" id="inicio">
@@ -823,8 +845,16 @@
       <div class="container site-footer__grid">
         <div>
           <a class="brand brand--footer" href="#inicio">
-            <span class="brand__mark" aria-hidden="true"></span>
-            <span>
+            <span class="brand__media">
+              <img
+                class="brand__logo"
+                src="assets/guto-tech-logo.png"
+                alt="Logo GUTO TECH"
+                width="72"
+                height="72"
+              />
+            </span>
+            <span class="brand__text">
               <strong>GUTO TECH</strong>
               <small>Qualidade, agilidade e ótimo custo-benefício para o seu computador.</small>
             </span>
