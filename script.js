@@ -3,6 +3,7 @@ const nav = document.querySelector(".site-nav");
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelectorAll('.site-nav a[href^="#"]');
 const revealItems = document.querySelectorAll(".reveal");
+const mobileQuickNavLinks = document.querySelectorAll(".mobile-quick-nav__link");
 const reviewForm = document.querySelector("#review-form");
 const testimonialList = document.querySelector("#testimonial-list");
 const reviewRatingInput = document.querySelector("#review-rating");
@@ -19,6 +20,7 @@ const closeMenu = () => {
 
   nav.classList.remove("is-open");
   navToggle.setAttribute("aria-expanded", "false");
+  document.body.classList.remove("is-menu-open");
 };
 
 const toggleMenu = () => {
@@ -26,6 +28,7 @@ const toggleMenu = () => {
 
   const isOpen = nav.classList.toggle("is-open");
   navToggle.setAttribute("aria-expanded", String(isOpen));
+  document.body.classList.toggle("is-menu-open", isOpen);
 };
 
 if (navToggle) {
@@ -71,6 +74,58 @@ const revealObserver = new IntersectionObserver(
 revealItems.forEach((item) => {
   revealObserver.observe(item);
 });
+
+const setActiveMobileQuickNav = (sectionId) => {
+  let activeLink = null;
+
+  mobileQuickNavLinks.forEach((link) => {
+    const isActive = link.dataset.mobileNav === sectionId;
+    link.classList.toggle("is-active", isActive);
+    if (isActive) activeLink = link;
+  });
+
+  if (activeLink) {
+    activeLink.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "center"
+    });
+  }
+};
+
+const quickNavSections = [...mobileQuickNavLinks]
+  .map((link) => document.getElementById(link.dataset.mobileNav || ""))
+  .filter(Boolean);
+
+let activeQuickNavSectionId = "inicio";
+
+if (quickNavSections.length > 0) {
+  const quickNavObserver = new IntersectionObserver(
+    (entries) => {
+      const visibleEntries = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((first, second) => second.intersectionRatio - first.intersectionRatio);
+
+      if (visibleEntries.length === 0) return;
+
+      const nextSectionId = visibleEntries[0].target.id;
+      if (!nextSectionId || nextSectionId === activeQuickNavSectionId) return;
+
+      activeQuickNavSectionId = nextSectionId;
+      setActiveMobileQuickNav(nextSectionId);
+    },
+    {
+      threshold: [0.2, 0.35, 0.55],
+      rootMargin: "-20% 0px -55% 0px"
+    }
+  );
+
+  quickNavSections.forEach((section) => {
+    quickNavObserver.observe(section);
+  });
+}
+
+setActiveMobileQuickNav(activeQuickNavSectionId);
 
 const normalizeText = (value) => value.replace(/\s+/g, " ").trim();
 
@@ -186,6 +241,16 @@ const renderStoredReviews = () => {
 reviewStars.forEach((star) => {
   star.addEventListener("click", () => {
     setActiveRating(Number(star.dataset.value));
+  });
+});
+
+mobileQuickNavLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    const sectionId = link.dataset.mobileNav;
+    if (!sectionId) return;
+
+    activeQuickNavSectionId = sectionId;
+    setActiveMobileQuickNav(sectionId);
   });
 });
 
