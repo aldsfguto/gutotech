@@ -552,9 +552,92 @@ main {
 }
 
 .services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
   gap: 1.3rem;
+}
+
+.carousel-shell {
+  position: relative;
+}
+
+.carousel-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.carousel-toolbar__hint {
+  margin: 0;
+  color: rgba(239, 247, 238, 0.72);
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+.carousel-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+
+.carousel-control {
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 16px;
+  border: 1px solid rgba(125, 255, 57, 0.18);
+  background:
+    linear-gradient(180deg, rgba(12, 24, 16, 0.96), rgba(7, 13, 9, 0.96));
+  color: var(--text);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition:
+    transform var(--transition),
+    border-color var(--transition),
+    box-shadow var(--transition),
+    background-color var(--transition);
+}
+
+.carousel-control:hover,
+.carousel-control:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(125, 255, 57, 0.34);
+  box-shadow: var(--shadow-neon);
+}
+
+.carousel-control:disabled {
+  opacity: 0.45;
+  cursor: default;
+  transform: none;
+  box-shadow: var(--shadow);
+}
+
+.carousel-control span {
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1.2rem;
+  overflow-x: auto;
+  padding: 0.1rem 0.1rem 0.55rem;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-track > * {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
 }
 
 .service-card,
@@ -583,6 +666,7 @@ main {
 }
 
 .service-card {
+  width: min(360px, calc(100vw - 2.6rem));
   padding: 1.4rem;
   transition:
     transform var(--transition),
@@ -1010,17 +1094,16 @@ main {
 }
 
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.15rem;
 }
 
 .gallery-card {
+  width: min(320px, calc(100vw - 2.6rem));
   min-height: 240px;
 }
 
 .gallery-card--wide {
-  grid-column: span 2;
+  width: min(430px, calc(100vw - 2.6rem));
 }
 
 .gallery-card img {
@@ -1051,12 +1134,11 @@ main {
 }
 
 .testimonial-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.2rem;
 }
 
 .testimonial-card {
+  width: min(320px, calc(100vw - 2.6rem));
   padding: 1.4rem;
 }
 
@@ -1469,8 +1551,6 @@ main {
 @media (max-width: 1080px) {
   .hero__grid,
   .site-footer__grid,
-  .testimonial-grid,
-  .services-grid,
   .advantage-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1481,10 +1561,6 @@ main {
 
   .promo-grid,
   .promo-side {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .gallery-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -1528,6 +1604,18 @@ main {
     align-items: flex-start;
   }
 
+  .service-card {
+    width: min(340px, calc(100vw - 2.6rem));
+  }
+
+  .gallery-card {
+    width: min(300px, calc(100vw - 2.6rem));
+  }
+
+  .gallery-card--wide {
+    width: min(390px, calc(100vw - 2.6rem));
+  }
+
   .site-nav a:not(.site-nav__cta) {
     padding: 0.84rem 0.35rem;
     border-bottom: 1px solid rgba(125, 255, 57, 0.08);
@@ -1559,9 +1647,7 @@ main {
   }
 
   .hero__grid,
-  .services-grid,
   .advantage-grid,
-  .testimonial-grid,
   .site-footer__grid,
   .cta-box {
     grid-template-columns: 1fr;
@@ -1593,6 +1679,15 @@ main {
 
   .review-form__grid {
     grid-template-columns: 1fr;
+  }
+
+  .carousel-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .carousel-controls {
+    align-self: flex-end;
   }
 
   .hero__highlights {
@@ -1675,6 +1770,37 @@ main {
 
   .review-panel {
     padding: 1.3rem;
+  }
+
+  .carousel-toolbar {
+    gap: 0.7rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .carousel-toolbar__hint {
+    font-size: 0.84rem;
+  }
+
+  .carousel-control {
+    width: 40px;
+    height: 40px;
+    border-radius: 14px;
+  }
+
+  .carousel-track {
+    gap: 0.9rem;
+    padding-bottom: 0.4rem;
+    scroll-snap-type: x mandatory;
+  }
+
+  .service-card,
+  .gallery-card,
+  .testimonial-card {
+    width: min(84vw, 320px);
+  }
+
+  .gallery-card--wide {
+    width: min(84vw, 320px);
   }
 
   .promo-card,
@@ -1789,14 +1915,6 @@ main {
 
   .button {
     width: 100%;
-  }
-
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery-card--wide {
-    grid-column: auto;
   }
 
   .gallery-card img,
