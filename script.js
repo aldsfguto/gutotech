@@ -10,6 +10,7 @@ const reviewRatingInput = document.querySelector("#review-rating");
 const reviewStars = document.querySelectorAll(".review-star");
 const reviewFeedback = document.querySelector("#review-feedback");
 const reviewsStorageKey = "guto-tech-site-reviews";
+const carouselTracks = document.querySelectorAll("[data-carousel-track]");
 
 const updateHeaderState = () => {
   header.classList.toggle("is-scrolled", window.scrollY > 24);
@@ -93,6 +94,69 @@ const setActiveMobileQuickNav = (sectionId) => {
   }
 };
 
+const updateCarouselButtons = (trackName) => {
+  const track = document.querySelector(`[data-carousel-track="${trackName}"]`);
+  if (!(track instanceof HTMLElement)) return;
+
+  const prevButton = document.querySelector(`[data-carousel-prev="${trackName}"]`);
+  const nextButton = document.querySelector(`[data-carousel-next="${trackName}"]`);
+  const maxScrollLeft = Math.max(0, track.scrollWidth - track.clientWidth - 4);
+
+  if (prevButton instanceof HTMLButtonElement) {
+    prevButton.disabled = track.scrollLeft <= 4;
+  }
+
+  if (nextButton instanceof HTMLButtonElement) {
+    nextButton.disabled = track.scrollLeft >= maxScrollLeft;
+  }
+};
+
+const getCarouselStep = (track) => {
+  const firstCard = track.firstElementChild;
+
+  if (!(firstCard instanceof HTMLElement)) {
+    return Math.max(track.clientWidth * 0.85, 260);
+  }
+
+  const gap = Number.parseFloat(window.getComputedStyle(track).gap || "0");
+  return firstCard.getBoundingClientRect().width + gap;
+};
+
+const setupCarousel = (track) => {
+  if (!(track instanceof HTMLElement)) return;
+
+  const trackName = track.dataset.carouselTrack;
+  if (!trackName) return;
+
+  const prevButton = document.querySelector(`[data-carousel-prev="${trackName}"]`);
+  const nextButton = document.querySelector(`[data-carousel-next="${trackName}"]`);
+
+  const moveTrack = (direction) => {
+    track.scrollBy({
+      left: getCarouselStep(track) * direction,
+      behavior: "smooth"
+    });
+  };
+
+  if (prevButton instanceof HTMLButtonElement) {
+    prevButton.addEventListener("click", () => moveTrack(-1));
+  }
+
+  if (nextButton instanceof HTMLButtonElement) {
+    nextButton.addEventListener("click", () => moveTrack(1));
+  }
+
+  track.addEventListener(
+    "scroll",
+    () => {
+      updateCarouselButtons(trackName);
+    },
+    { passive: true }
+  );
+
+  updateCarouselButtons(trackName);
+};
+
 const quickNavSections = [...mobileQuickNavLinks]
   .map((link) => document.getElementById(link.dataset.mobileNav || ""))
   .filter(Boolean);
@@ -126,6 +190,7 @@ if (quickNavSections.length > 0) {
 }
 
 setActiveMobileQuickNav(activeQuickNavSectionId);
+carouselTracks.forEach(setupCarousel);
 
 const normalizeText = (value) => value.replace(/\s+/g, " ").trim();
 
@@ -160,8 +225,7 @@ const getInitials = (name) =>
     .map((part) => part.charAt(0).toUpperCase())
     .join("");
 
-const getRatingStars = (rating) =>
-  `${"★".repeat(rating)}${"☆".repeat(Math.max(0, 5 - rating))}`;
+const getRatingStars = (rating) => `${"★".repeat(rating)}${"☆".repeat(Math.max(0, 5 - rating))}`;
 
 const setReviewFeedback = (message, isError = false) => {
   if (!reviewFeedback) return;
@@ -257,6 +321,7 @@ mobileQuickNavLinks.forEach((link) => {
 if (reviewForm && reviewRatingInput) {
   setActiveRating(Number(reviewRatingInput.value) || 5);
   renderStoredReviews();
+  updateCarouselButtons("depoimentos");
 
   reviewForm.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -286,11 +351,22 @@ if (reviewForm && reviewRatingInput) {
     reviewForm.reset();
     setActiveRating(5);
     setReviewFeedback("Avaliação enviada com sucesso. Ela já apareceu acima.");
+    updateCarouselButtons("depoimentos");
 
     const newestReview = testimonialList?.querySelector(".testimonial-card--user");
-    newestReview?.scrollIntoView({ behavior: "smooth", block: "center" });
+    newestReview?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
   });
 }
 
 updateHeaderState();
 window.addEventListener("scroll", updateHeaderState, { passive: true });
+window.addEventListener("resize", () => {
+  carouselTracks.forEach((track) => {
+    if (!(track instanceof HTMLElement)) return;
+
+    const trackName = track.dataset.carouselTrack;
+    if (!trackName) return;
+
+    updateCarouselButtons(trackName);
+  });
+});
