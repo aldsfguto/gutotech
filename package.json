@@ -1,0 +1,16 @@
+{
+  "name": "gutotech",
+  "version": "1.0.0",
+  "description": "Site da assistência GUTO TECH",
+  "type": "module",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "build": "echo 'No build step required for static site'"
+  },
+  "keywords": ["guto", "tech", "assistencia", "computador"],
+  "author": "GUTO TECH",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
